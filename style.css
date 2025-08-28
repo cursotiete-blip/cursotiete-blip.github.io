@@ -1,0 +1,96 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.cabecalho {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 2.8em;
+}
+
+.cabecalho p {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* Estilos do conteúdo principal */
+.conteudo {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.conteudo h2 {
+    font-size: 2em;
+    color: #004d40;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.galeria-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.produto {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.produto h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #004d40;
+}
+
+.produto p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.produto span {
+    display: block;
+    font-size: 1.3em;
+    color: #e65100;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilos do rodapé */
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
