@@ -511,3 +511,303 @@
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esporte & Estilo - Loja Online</title>
+    <!-- Inclui a biblioteca Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define a fonte Inter para todo o corpo do documento */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        /* Define a animação de hover para os botões e links */
+        .hover-scale {
+            transition: transform 0.2s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        /* Estilo para a barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 8px;
+            background-color: #f7f7f7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #e0e0e0;
+            border-radius: 4px;
+        }
+        /* Classe para a cor principal verde */
+        .bg-primary-green {
+            background-color: #28a745;
+        }
+        .text-primary-green {
+            color: #28a745;
+        }
+        .ring-primary-green {
+            --tw-ring-color: #28a745;
+        }
+
+        /* Novo estilo para o nome da loja: maior e com um efeito sutil */
+        .logo-effect {
+            transition: all 0.3s ease-in-out;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .logo-effect:hover {
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            color: #f0f0f0;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Cabeçalho (Header) com barra de busca proeminente -->
+    <header class="bg-gray-900 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-2 flex flex-col items-center">
+            <!-- Logo e Ícones superiores -->
+            <div class="flex items-center justify-between w-full mb-3">
+                <!-- Nome da loja com novo tamanho e efeito -->
+                <a href="#" class="text-3xl md:text-4xl font-extrabold tracking-wider logo-effect">Esporte & Estilo</a>
+                <div class="flex items-center space-x-4">
+                    <a href="#">
+                        <!-- Ícone de mensagens SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 111-.75 0 011.5 0zM12 12a.375.375 0 11-.75 0 011.5 0zM15.375 12a.375.375 0 11-.75 0 011.5 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12c0-5.385 4.5-9.75 10-9.75s10 4.365 10 9.75-4.5 9.75-10 9.75S2.25 17.385 2.25 12z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <!-- Ícone de carrinho de compras SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-4.973l-4.793-4.793a3.75 3.75 0 00-5.304 0L4.793 5.527m11.356 4.973H21v-4.5h-5.644z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12v3.75m-3.75-3.75V12m0-3.75h3.75m-3.75 0a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Barra de busca -->
+            <div class="w-full flex items-center bg-white rounded-lg p-1.5 shadow-sm">
+                <input type="text" placeholder="Buscar produtos e muito mais..." class="flex-grow px-4 py-1.5 text-gray-800 rounded-lg focus:outline-none text-sm placeholder-gray-400">
+                <button class="bg-primary-green text-white p-2 rounded-lg hover:bg-green-700 transition-colors duration-200">
+                    <!-- Ícone de busca SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de navegação por ícones (estilo Shopee) -->
+    <section class="bg-white py-4 shadow-sm mb-6">
+        <div class="container mx-auto px-4">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Categorias</h2>
+            <div class="grid grid-cols-5 md:grid-cols-10 gap-4 text-center">
+                <a href="#masculino" class="flex flex-col items-center justify-center text-gray-700 hover:text-primary-green transition-colors duration-200">
+                    <img src="https://placehold.co/60x60/d4d4d4/000000?text=Homem" alt="Ícone Masculino" class="rounded-full w-12 h-12 mb-1">
+                    <span class="text-xs font-semibold">Masculino</span>
+                </a>
+                <a href="#feminino" class="flex flex-col items-center justify-center text-gray-700 hover:text-primary-green transition-colors duration-200">
+                    <img src="https://placehold.co/60x60/d4d4d4/000000?text=Mulher" alt="Ícone Feminino" class="rounded-full w-12 h-12 mb-1">
+                    <span class="text-xs font-semibold">Feminino</span>
+                </a>
+                <a href="#acessorios" class="flex flex-col items-center justify-center text-gray-700 hover:text-primary-green transition-colors duration-200">
+                    <img src="https://placehold.co/60x60/d4d4d4/000000?text=Acessórios" alt="Ícone Acessórios" class="rounded-full w-12 h-12 mb-1">
+                    <span class="text-xs font-semibold">Acessórios</span>
+                </a>
+                 <a href="#promoções" class="flex flex-col items-center justify-center text-gray-700 hover:text-primary-green transition-colors duration-200">
+                    <img src="https://placehold.co/60x60/d4d4d4/000000?text=Promo" alt="Ícone Promoções" class="rounded-full w-12 h-12 mb-1">
+                    <span class="text-xs font-semibold">Promoções</span>
+                </a>
+                <a href="#" class="flex flex-col items-center justify-center text-gray-700 hover:text-primary-green transition-colors duration-200">
+                    <img src="https://placehold.co/60x60/d4d4d4/000000?text=Novos" alt="Ícone Novidades" class="rounded-full w-12 h-12 mb-1">
+                    <span class="text-xs font-semibold">Novidades</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo principal (Main) -->
+    <main class="container mx-auto px-4 py-8 bg-white rounded-2xl shadow-lg">
+
+        <!-- Seção de Destaques (Hero Banner) - Estilo Oferta Relâmpago -->
+        <section id="destaques" class="relative bg-green-500 rounded-lg overflow-hidden shadow-lg mb-8 p-6">
+            <div class="flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+                <div class="text-white">
+                    <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight">OFERTA DO DIA!</h1>
+                    <p class="mt-2 text-xl font-light">Descontos de até 50% em peças selecionadas.</p>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="px-8 py-3 bg-black text-white font-bold rounded-full shadow-lg hover:bg-gray-800 hover-scale transition-all duration-300">
+                        Compre Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seções de Produtos -->
+        <!-- Seção Masculino -->
+        <section id="masculino" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Coleção Masculina</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                <!-- Cartão de Produto 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden hover-scale cursor-pointer">
+                    <img src="https://placehold.co/400x400/28a745/FFFFFF?text=Camiseta" alt="Camiseta esportiva" class="w-full h-48 object-cover">
+                    <div class="p-3">
+                        <h3 class="text-sm font-semibold text-gray-800">Camiseta Dry-Fit Pro</h3>
+                        <div class="text-xs text-gray-500 mt-1">Conforto e Tecnologia</div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-md font-bold text-primary-green">R$ 89,90</span>
+                            <span class="text-xs text-gray-400 line-through">R$ 109,90</span>
+                        </div>
+                         <!-- Selo de promoção -->
+                        <div class="absolute top-2 right-2 bg-yellow-400 text-gray-800 text-xs font-bold px-2 py-1 rounded-full">
+                            -20%
+                        </div>
+                    </div>
+                </div>
+                <!-- Cartão de Produto 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden hover-scale cursor-pointer">
+                    <img src="https://placehold.co/400x400/000000/FFFFFF?text=Shorts" alt="Shorts de treino" class="w-full h-48 object-cover">
+                    <div class="p-3">
+                        <h3 class="text-sm font-semibold text-gray-800">Shorts de Corrida</h3>
+                        <div class="text-xs text-gray-500 mt-1">Leveza e Liberdade</div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-md font-bold text-primary-green">R$ 129,90</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cartão de Produto 3 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden hover-scale cursor-pointer">
+                    <img src="https://placehold.co/400x400/4B5563/FFFFFF?text=Casaco" alt="Casaco cortavento" class="w-full h-48 object-cover">
+                    <div class="p-3">
+                        <h3 class="text-sm font-semibold text-gray-800">Casaco Corta-Vento</h3>
+                        <div class="text-xs text-gray-500 mt-1">Proteção e Estilo</div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-md font-bold text-primary-green">R$ 219,90</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cartão de Produto 4 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden hover-scale cursor-pointer">
+                    <img src="https://placehold.co/400x400/6B7280/FFFFFF?text=Meias" alt="Meias esportivas" class="w-full h-48 object-cover">
+                    <div class="p-3">
+                        <h3 class="text-sm font-semibold text-gray-800">Meias Performance</h3>
+                        <div class="text-xs text-gray-500 mt-1">Suporte e Conforto</div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-md font-bold text-primary-green">R$ 39,90</span>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Cartão de Produto 5 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden hover-scale cursor-pointer">
+                    <img src="https://placehold.co/400x400/000000/FFFFFF?text=Tênis" alt="Tênis de corrida" class="w-full h-48 object-cover">
+                    <div class="p-3">
+                        <h3 class="text-sm font-semibold text-gray-800">Tênis de Corrida</h3>
+                        <div class="text-xs text-gray-500 mt-1">Amortecimento e Velocidade</div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-md font-bold text-primary-green">R$ 349,90</span>
+                            <span class="text-xs text-gray-400 line-through">R$ 499,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Feminino -->
+        <section id="feminino" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Coleção Feminina</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                <!-- Cartão de Produto 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden hover-scale cursor-pointer">
+                    <img src="https://placehold.co/400x400/28a745/FFFFFF?text=Top" alt="Top esportivo" class="w-full h-48 object-cover">
+                    <div class="p-3">
+                        <h3 class="text-sm font-semibold text-gray-800">Top Esportivo Fit</h3>
+                        <div class="text-xs text-gray-500 mt-1">Alto Suporte e Estilo</div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-md font-bold text-primary-green">R$ 79,90</span>
+                            <span class="text-xs text-gray-400 line-through">R$ 99,90</span>
+                        </div>
+                        <!-- Selo de promoção -->
+                        <div class="absolute top-2 right-2 bg-yellow-400 text-gray-800 text-xs font-bold px-2 py-1 rounded-full">
+                            -10%
+                        </div>
+                    </div>
+                </div>
+                <!-- Cartão de Produto 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden hover-scale cursor-pointer">
+                    <img src="https://placehold.co/400x400/000000/FFFFFF?text=Legging" alt="Legging de treino" class="w-full h-48 object-cover">
+                    <div class="p-3">
+                        <h3 class="text-sm font-semibold text-gray-800">Legging Power Stretch</h3>
+                        <div class="text-xs text-gray-500 mt-1">Flexibilidade e Conforto</div>
+                        <div class="flex items-center justify-between mt-2">
+                            <span class="text-md font-bold text-primary-green">R$ 159,90</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-6">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Coluna 1: Sobre a Loja -->
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Esporte & Estilo</h4>
+                <p class="text-sm">Oferecendo o melhor em roupas esportivas para quem busca performance e elegância.</p>
+            </div>
+            <!-- Coluna 2: Links Úteis -->
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Links Úteis</h4>
+                <ul class="text-sm space-y-2">
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Sobre Nós</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Política de Troca</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Termos de Uso</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Contato</a></li>
+                </ul>
+            </div>
+            <!-- Coluna 3: Siga-nos -->
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Siga-nos</h4>
+                <div class="flex space-x-4">
+                    <!-- Ícones das redes sociais (pode usar SVG ou imagens) -->
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">...</svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">...</svg>
+                    </a>
+                </div>
+            </div>
+            <!-- Coluna 4: Formulário de Contato -->
+            <div id="contact-form-section">
+                <h4 class="text-lg font-bold text-white mb-4">Fale Conosco</h4>
+                <form class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="Seu Nome" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-green">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Seu Email" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-green">
+                    </div>
+                    <div>
+                        <textarea placeholder="Sua Mensagem" rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary-green"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 bg-primary-green text-white font-bold rounded-full shadow-lg hover:bg-green-700 hover-scale transition-all duration-300">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center text-sm text-gray-500 mt-8">
+            © 2025 Esporte & Estilo. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>
