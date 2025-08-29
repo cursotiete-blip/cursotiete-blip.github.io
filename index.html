@@ -56,3 +56,219 @@
     <img src="https://picsum.photos/400/200" alt="Exemplo de imagem">
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esporte & Estilo - Loja Online</title>
+    <!-- Inclui a biblioteca Tailwind CSS para estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define a fonte Inter para todo o corpo do documento */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Define a animação de hover para os botões e links */
+        .hover-scale {
+            transition: transform 0.2s ease-in-out;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        /* Estilo para a barra de rolagem */
+        ::-webkit-scrollbar {
+            width: 8px;
+            background-color: #F3F4F6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #D1D5DB;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 antialiased">
+
+    <!-- Cabeçalho (Header) com menu de navegação e busca -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between">
+            <!-- Logo e Título da Loja -->
+            <a href="#" class="text-3xl font-bold text-gray-900 tracking-wider">
+                Esporte & Estilo
+            </a>
+
+            <!-- Navegação principal -->
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex space-x-6 md:space-x-8 text-sm font-medium">
+                    <li><a href="#destaques" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Destaques</a></li>
+                    <li><a href="#masculino" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Masculino</a></li>
+                    <li><a href="#feminino" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Feminino</a></li>
+                    <li><a href="#acessorios" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Acessórios</a></li>
+                    <li><a href="#promocoes" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">Promoções</a></li>
+                </ul>
+            </nav>
+
+            <!-- Ícones e barra de busca -->
+            <div class="flex items-center space-x-4 mt-4 md:mt-0 w-full md:w-auto">
+                <input type="text" placeholder="Buscar..." class="w-full md:w-48 px-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300 text-sm">
+                <button class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                    <!-- Ícone de busca SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <a href="#" class="text-gray-600 hover:text-indigo-600 transition-colors duration-300">
+                    <!-- Ícone de carrinho de compras SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5H1M7 13h10l1 4h-10M7 13v-4m0 4h10m-5 4a2 2 0 11-4 0 2 2 0 014 0zm10 0a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal (Main) -->
+    <main class="container mx-auto px-4 py-8">
+
+        <!-- Seção de Destaques (Hero Banner) -->
+        <section id="destaques" class="relative bg-gray-900 rounded-2xl overflow-hidden shadow-xl mb-12">
+            <!-- Imagem do banner de destaque -->
+            <img src="https://placehold.co/1200x500/000000/FFFFFF?text=Nova+Cole%C3%A7%C3%A3o+de+Treino" alt="Nova coleção de treino" class="w-full h-96 object-cover object-center opacity-70">
+            <!-- Conteúdo do banner sobre a imagem -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight drop-shadow-lg">Conquiste Seus Limites</h1>
+                <p class="mt-4 text-xl md:text-2xl font-light max-w-2xl drop-shadow-md">Descubra a coleção de alta performance feita para você ir mais longe. Qualidade e estilo em cada movimento.</p>
+                <a href="#" class="mt-8 px-8 py-3 bg-indigo-600 text-white font-bold rounded-full shadow-lg hover:bg-indigo-700 hover-scale transition-all duration-300">
+                    Compre Agora
+                </a>
+            </div>
+        </section>
+
+        <!-- Seções de Produtos -->
+        <!-- Seção Masculino -->
+        <section id="masculino" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-indigo-600 pb-2">Coleção Masculina</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Cartão de Produto 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden hover-scale">
+                    <img src="https://placehold.co/400x400/3B82F6/FFFFFF?text=Camiseta+Esportiva" alt="Camiseta esportiva" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Camiseta Dry-Fit Pro</h3>
+                        <p class="text-gray-500 mt-1">Conforto e Tecnologia</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-indigo-600">R$ 89,90</span>
+                            <a href="#" class="px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-full hover:bg-indigo-700 transition-colors duration-300">Adicionar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cartão de Produto 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden hover-scale">
+                    <img src="https://placehold.co/400x400/1E3A8A/FFFFFF?text=Shorts+de+Treino" alt="Shorts de treino" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Shorts de Corrida</h3>
+                        <p class="text-gray-500 mt-1">Leveza e Liberdade</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-indigo-600">R$ 129,90</span>
+                            <a href="#" class="px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-full hover:bg-indigo-700 transition-colors duration-300">Adicionar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cartão de Produto 3 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden hover-scale">
+                    <img src="https://placehold.co/400x400/9CA3AF/FFFFFF?text=Casaco+Cortavento" alt="Casaco cortavento" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Casaco Corta-Vento</h3>
+                        <p class="text-gray-500 mt-1">Proteção e Estilo</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-indigo-600">R$ 219,90</span>
+                            <a href="#" class="px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-full hover:bg-indigo-700 transition-colors duration-300">Adicionar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cartão de Produto 4 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden hover-scale">
+                    <img src="https://placehold.co/400x400/4B5563/FFFFFF?text=Meias+Esportivas" alt="Meias esportivas" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Meias Performance</h3>
+                        <p class="text-gray-500 mt-1">Suporte e Conforto</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-indigo-600">R$ 39,90</span>
+                            <a href="#" class="px-4 py-2 bg-indigo-600 text-white text-sm font-bold rounded-full hover:bg-indigo-700 transition-colors duration-300">Adicionar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Feminino -->
+        <section id="feminino" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-pink-600 pb-2">Coleção Feminina</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Cartão de Produto 1 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden hover-scale">
+                    <img src="https://placehold.co/400x400/EC4899/FFFFFF?text=Top+Esportivo" alt="Top esportivo" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Top Esportivo Fit</h3>
+                        <p class="text-gray-500 mt-1">Alto Suporte e Estilo</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-pink-600">R$ 79,90</span>
+                            <a href="#" class="px-4 py-2 bg-pink-600 text-white text-sm font-bold rounded-full hover:bg-pink-700 transition-colors duration-300">Adicionar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cartão de Produto 2 -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 overflow-hidden hover-scale">
+                    <img src="https://placehold.co/400x400/BE185D/FFFFFF?text=Legging+de+Treino" alt="Legging de treino" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">Legging Power Stretch</h3>
+                        <p class="text-gray-500 mt-1">Flexibilidade e Conforto</p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="text-2xl font-bold text-pink-600">R$ 159,90</span>
+                            <a href="#" class="px-4 py-2 bg-pink-600 text-white text-sm font-bold rounded-full hover:bg-pink-700 transition-colors duration-300">Adicionar</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Adicione mais produtos conforme necessário -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Coluna 1: Sobre a Loja -->
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Esporte & Estilo</h4>
+                <p class="text-sm">Oferecendo o melhor em roupas esportivas para quem busca performance e elegância.</p>
+            </div>
+            <!-- Coluna 2: Links Úteis -->
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Links Úteis</h4>
+                <ul class="text-sm space-y-2">
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Sobre Nós</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Política de Troca</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Termos de Uso</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors duration-300">Contato</a></li>
+                </ul>
+            </div>
+            <!-- Coluna 3: Siga-nos -->
+            <div>
+                <h4 class="text-lg font-bold text-white mb-4">Siga-nos</h4>
+                <div class="flex space-x-4">
+                    <!-- Ícones das redes sociais (pode usar SVG ou imagens) -->
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">...</svg> <!-- Exemplo de ícone, substitua por ícones reais -->
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">...</svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm text-gray-500 mt-8">
+            © 2025 Esporte & Estilo. Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>
